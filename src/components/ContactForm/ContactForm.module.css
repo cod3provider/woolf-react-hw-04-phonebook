@@ -1,0 +1,48 @@
+.wrap {
+  padding: 12px;
+  max-width: 500px;
+  border: 1px solid rgba(33, 159, 255, 0.59);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 60%;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.input {
+  padding: 4px;
+  outline: 1px solid transparent;
+  border: 1px solid #b3deea;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #102356;
+}
+
+.button {
+  display: block;
+  padding: 4px;
+  width: calc(100% / 2);
+  border: 1px solid #b3deea;
+  border-radius: 4px;
+  background-color: #f3f9ff;
+  color: #102356;
+  cursor: pointer;
+  transition: color 250ms linear, background-color 250ms linear;
+
+  @media (width < 280px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: #a3c4e7;
+    color: #343434;
+  }
+}

@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 280px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.item::before {
+  content: "●";
+  position: absolute;
+  left: -25px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  color: #102356;
+  cursor: pointer;
+  background-color: #fdeaf8;
+  border: 1px solid #ffd1d1;
+  border-radius: 4px;
+  transition: background-color 250ms linear;
+
+  &:hover {
+    background-color: #e8b5da;
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: #ad0a0a;
+}

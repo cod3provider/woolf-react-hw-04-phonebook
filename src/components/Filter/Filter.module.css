@@ -1,0 +1,15 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+}
+
+.input {
+  outline: 1px solid transparent;
+  padding: 4px 8px;
+  border: 1px solid #b3deea;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #102356;
+}
