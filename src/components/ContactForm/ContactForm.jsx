@@ -5,22 +5,9 @@ import s from './ContactForm.module.css';
 const ContactForm = ({onSubmit}) => {
 	const [name, setName] = useState('');
 	const [number, setNumber] = useState('');
-	// state = {
-	//   name: '',
-	//   number: '',
-	// };
-
-	// handleChange = e => {
-	// 	const {name, value} = e.target;
-	//
-	// 	this.setState({
-	// 		[name]: value,
-	// 	});
-	// };
 
 	const handleSubmit = e => {
 		e.preventDefault();
-
 		onSubmit({name, number});
 		reset();
 	};
