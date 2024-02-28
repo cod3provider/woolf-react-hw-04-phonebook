@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import ContactForm from './ContactForm/ContactForm';
 import ContactsList from './ContactsList/ContactsList';
@@ -23,7 +25,7 @@ const App = () => {
 
     const isExist = contacts.some(contact => contact.name.toLowerCase() === name.toLowerCase());
     if (isExist) {
-      alert(`${name} is already in contacts.`);
+      toast.warn(`${name} is already in contacts.`);
       return false;
     }
 
@@ -51,9 +53,19 @@ const App = () => {
     <Container>
       <h1>Phonebook</h1>
       <ContactForm onSubmit={createContact} />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
 
-      {/* Same as */}
-      <ToastContainer />
+      />
 
       <h2>Contacts</h2>
       <Filter value={filter} handleChange={handleFilterChange} />
