@@ -2,7 +2,7 @@
   "name": "woolf-react-hw-04-phonebook",
   "version": "0.3.0",
   "private": true,
-  "homepage": "https://cod3provider.github.io/woolf-react-hw-04a-phonebook/",
+  "homepage": "https://cod3provider.github.io/woolf-react-hw-04-phonebook/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
